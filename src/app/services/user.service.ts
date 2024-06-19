@@ -10,5 +10,8 @@ export class UserService {
     this.users.push({username, password});  
     console.log(this.users)
   }
+  getUser(){
+    return this.users;
+  }
   
 }

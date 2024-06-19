@@ -2,9 +2,9 @@
     <form>
         <h2>Login</h2>
         <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
+        <input type="text" id="username" name="username" required autocomplete="username" #userName>
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <button type="submit">Login</button>
+        <input type="password" id="password" name="password" required autocomplete="current-password" #pass>
+        <button type="button" (click)="login(userName,pass)">Login</button>
     </form>
 </div>
